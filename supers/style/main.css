@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../../res/fonts/Satoshi-Bold.otf");
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../../res/fonts/Satoshi-Medium.otf");
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../../res/fonts/Satoshi-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0em auto;
+}
+
+.heading {
+  font-family: "Satoshi-Bold";
+  font-size: 80px;
+  line-height: 92px;
+}
+
+.sub-heading {
+  font-family: "Satoshi-Regular";
+  font-size: 36px;
+  line-height: 68px;
+}
+
+.sub-title {
+  font-family: "Satoshi-Regular";
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.button {
+  font-family: "Satoshi-Medium";
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.super-img {
+  position: relative;
+  left: 5%;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  width: 100%;
+  max-width: 624px;
+  height: auto;
+}
+
+.super-img img {
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.the-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.the-box .super-info {
+  margin: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */

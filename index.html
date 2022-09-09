@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <div class="the-container">
+            <div class="super">
+                <a href="./supers/shwetabh.html">
+                    <div class="imgBx">
+                        <img src="./res/img/shwetabh.png" alt="">
+                        <div class="name">Shwetabh Gangwar</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="super">
+                <a href="./supers/gary.html">
+                    <div class="imgBx">
+                        <img src="./res/img/garyvee.png" alt="">
+                        <div class="name">Gary Vee</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="super">
+                <a href="./supers/chris.html">
+                    <div class="imgBx">
+                        <img src="./res/img/chrisDo.png" alt="">
+                        <div class="name">Chris Do</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+    <script>
+        // OVERLAY
+        TweenMax.to(".first", 1.5, {
+            delay: .5,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".second", 1.5, {
+            delay: .7,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".third", 1.5, {
+            delay: .9,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
