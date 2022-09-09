@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Do</title>
+
+    <link rel="stylesheet" href="./style/chris.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="body-font">
+            <div class="container mt-4 mx-auto flex px-5 md:flex-row flex-col items-center">
+                <div
+                    class="super-info lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <a class="mr-5 flex items-center" href="../index.html">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24"
+                            style="transform: rotate(-180deg); margin-right: 4px;">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>Back</a>
+                    <h1 class="heading mb-4">Chris Do</h1>
+                    <p class="sub-heading mb-8">Product Designer</p>
+                    <div class="sub-title mt-12 w-96">Iron man is a superhero appearing in American comic books
+                        published by
+                        Marvel Comics.</div>
+                    <div class="mt-6 social-media flex justify-center">
+                        <a class="mr-4" href="https://twitter.com/theChrisDo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="mr-4" href="https://www.youtube.com/c/thefuturishere" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="mr-4" href="https://www.linkedin.com/in/thechrisdo/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="super-img">
+                    <img class="object-cover object-center" alt="hero" src="../res/img/chrisDo.png">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/df18b2a205.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+    <script>
+        TweenMax.from(".super-img", 1.8, {
+            delay: 0.8,
+            x: "-150%",
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".heading", 1.5, {
+            delay: 1.4,
+            y: "150%",
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".sub-heading", 1.5, {
+            delay: 1.6,
+            y: "150%",
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".sub-title", 1.5, {
+            delay: 1.8,
+            y: "150%",
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".social-media a", 1, {
+            delay: 2.2,
+            opacity: 0,
+            x: -80,
+            ease: Power3.easeInOut
+        }, 0.08)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 9999;
+}
+
+.first {
+  background: #FFD60A;
+}
+
+.second {
+  background: #ffffff;
+  left: 33.3%;
+}
+
+.third {
+  background: #0e062c;
+  left: 66.6%;
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.the-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 0px);
+  max-height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.the-container .super {
+  position: relative;
+  overflow: hidden;
+  width: 36%;
+  height: 100%;
+}
+
+.the-container .super .imgBx {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  /* W3C */
+}
+
+.the-container .super .imgBx img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  -webkit-transition: 0.250s ease-in-out;
+  transition: 0.250s ease-in-out;
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.the-container .super .imgBx .name {
+  display: none;
+  font-size: 24px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  margin: 50vh auto;
+}
+
+.the-container .super .imgBx .name img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 18px;
+  height: auto;
+}
+
+.the-container .super .super:last-child {
+  border-right: none;
+}
+
+.the-container .super .imgBx:hover {
+  background: -webkit-gradient(linear, left top, left bottom, to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 100%);
+}
+
+.the-container .super .imgBx:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.the-container .super .imgBx:hover .name {
+  display: block;
+}
+
+.super:nth-child(1) .imgBx img,
+.super:nth-child(2) .imgBx img {
+  -o-object-position: 50% top;
+     object-position: 50% top;
+}
+
+.super:nth-child(3) .imgBx img {
+  -o-object-position: 60% top;
+     object-position: 60% top;
+}
+/*# sourceMappingURL=style.css.map */

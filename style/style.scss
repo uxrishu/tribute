@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Colors
+$yellow: #FFD60A;
+$black: #0e062c;
+$white: #ffffff;
+
+html,
+body {
+    background-color: $white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+}
+
+.first {
+    background: $yellow;
+}
+
+.second {
+    background: $white;
+    left: 33.3%;
+}
+
+.third {
+    background: $black;
+    left: 66.6%;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.the-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 0px);
+    max-height: 1000px;
+    display: flex;
+    z-index: 100;
+
+    .super {
+        position: relative;
+        overflow: hidden;
+        width: 36%;
+        height: 100%;
+
+        .imgBx {
+            position: absolute;
+            top: 0;
+            height: 0;
+            width: 100%;
+            height: 100%;
+            /* W3C */
+
+            img {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                z-index: -99;
+                object-fit: cover;
+                background-size: cover;
+                transition: 0.250s ease-in-out;
+                object-position: center top;
+            }
+
+            .name {
+                display: none;
+                font-size: 24px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                margin: 50vh auto;
+
+                img {
+                    display: flex;
+                    text-align: center;
+                    width: 18px;
+                    height: auto;
+
+                }
+            }
+        }
+
+        .super:last-child {
+            border-right: none;
+        }
+
+        .imgBx:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.6) 100%);
+
+            img {
+                transform: scale(1.2);
+            }
+
+            .name {
+                display: block;
+            }
+        }
+    }
+}
+
+.super:nth-child(1) .imgBx img,
+.super:nth-child(2) .imgBx img {
+
+    object-position: 50% top;
+}
+
+.super:nth-child(3) .imgBx img {
+
+    object-position: 60% top;
+}
