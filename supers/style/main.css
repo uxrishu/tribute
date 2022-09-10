@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -61,7 +61,7 @@ body {
   bottom: 0;
   right: 0;
   -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
   width: 100%;
   max-width: 624px;
   height: auto;
@@ -70,7 +70,7 @@ body {
 .super-img img {
   background-size: cover;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .the-box {
@@ -84,3 +84,26 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 600px) {
+
+  .heading {
+    margin-top: 2em;
+    font-family: "Satoshi-Bold";
+    font-size: 50px;
+    line-height: 54px;
+  }
+
+  .sub-heading {
+    font-family: "Satoshi-Regular";
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .sub-title {
+    font-family: "Satoshi-Regular";
+    padding: 0em 1.2em;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
