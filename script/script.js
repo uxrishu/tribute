@@ -1,3 +1,3 @@
-window.onload = function (){
-    document.querySelector(".preloader").style.display = "none";
-}
+$(window).on("load", function(){
+    $(".preloader").fadeOut("slow");
+});
